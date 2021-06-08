@@ -6,7 +6,7 @@ LINODE_TOKEN=$(bashio::config 'apiToken')
 DOMAIN=$(bashio::config 'domain')
 
 # Get the domain ID of the domain we're interested in
-DOMAINID=`curl -s -H \"Authorization: Bearer ${LINODE_TOKEN}\" https://api.linode.com/v4/domains | jq \'.data[] | select(.domain == \"$(DOMAIN)\") .id\'`
+DOMAINID=`curl -s -H \"Authorization: Bearer ${LINODE_TOKEN}\" https://api.linode.com/v4/domains | jq \'.data[] | select(.domain == \"${DOMAIN}\") .id\'`
 
 echo -n DOMAINID:
 echo ${DOMAINID}
