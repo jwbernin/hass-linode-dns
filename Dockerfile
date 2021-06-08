@@ -10,7 +10,7 @@ LABEL Description="This image is used to create and maintain a DNS entry in Lino
 RUN apk add --no-cache curl
 
 # Copy data for add-on
-COPY pushIP.py /
-RUN chmod a+x /pushIP.py
+COPY run.sh /
+RUN chmod a+x /run.sh
 
 CMD [ "/run.sh" ]
