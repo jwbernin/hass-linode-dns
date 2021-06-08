@@ -7,17 +7,17 @@
   "startup": "application",
   "boot": "auto",
   "options": {
-    "beer": true,
-    "wine": true,
-    "liquor": false,
-    "name": "world",
-    "year": 2017
+    "apiToken": null,
+    "hostname": null,
+    "domain": null,
+    "autoDetectIP": true,
+    "updateInterval": 240
   },
   "schema": {
-    "beer": "bool",
-    "wine": "bool",
-    "liquor": "bool",
-    "name": "str",
-    "year": "int"
+    "apiToken": "str",
+    "hostname": "str",
+    "domain": "str",
+    "autoDetectIP": "bool",
+    "updateInterval": "int"
   }
 }
