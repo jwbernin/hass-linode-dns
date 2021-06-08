@@ -1,8 +1,8 @@
 {
-  "name": "Hello world",
+  "name": "Linode DNS updater",
   "version": "1",
-  "slug": "hello_world",
-  "description": "My first real add-on!",
+  "slug": "linode_dns",
+  "description": "Update Linode DNS",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "application",
   "boot": "auto",
