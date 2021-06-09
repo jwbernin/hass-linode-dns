@@ -9,15 +9,11 @@
   "options": {
     "apiToken": null,
     "hostname": null,
-    "domain": null,
-    "autoDetectIP": true,
-    "updateInterval": 240
+    "domain": null
   },
   "schema": {
     "apiToken": "str",
     "hostname": "str",
-    "domain": "str",
-    "autoDetectIP": "bool",
-    "updateInterval": "int"
+    "domain": "str"
   }
 }
