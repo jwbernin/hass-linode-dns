@@ -10,7 +10,7 @@ LABEL Description="This image is used to create and maintain a DNS entry in Lino
 RUN apk add --no-cache curl
 
 # Copy data for add-on
-COPY run.sh /
-RUN chmod a+x /run.sh
+COPY run.sh /etc/periodic/daily
+RUN chmod a+x /etc/periodic/daily/run.sh
 
-CMD [ "/run.sh" ]
+#CMD [ "/run.sh" ]
